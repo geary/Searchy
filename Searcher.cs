@@ -24,7 +24,7 @@ namespace Searchy {
 				}
 				var mid = ( low + high ) / 2;
 				var start = _lines.LastIndexOf( '\n', mid - 1 );
-				var compare = String.Compare( _lines, start, find, 0, length );
+				var compare = String.CompareOrdinal( _lines, start, find, 0, length );
 				if( compare < 0 ) {
 					low = mid;
 				} else if( compare > 0 ) {
