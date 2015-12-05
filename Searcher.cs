@@ -23,7 +23,7 @@ namespace Searchy {
 					return false;
 				}
 				var mid = ( low + high ) / 2;
-				var start = _lines.LastIndexOf( '\n', mid - 1 );
+				var start = _lines.LastIndexOf( '\n', mid );
 				var compare = String.CompareOrdinal( _lines, start, find, 0, length );
 				if( compare < 0 ) {
 					low = mid;
